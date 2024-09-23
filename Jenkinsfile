@@ -46,7 +46,7 @@ pipeline{
 //                 inventory: 'inventory',
 //                 playbook: 'Deploy_Calculator.yml'
 //                     sh 'pwd'
-                    sh 'ansible-playbook -i inventory Deploy_Calculator.yml'
+                    sh 'sudo ansible-playbook -i inventory Deploy_Calculator.yml'
 
              }
         }
