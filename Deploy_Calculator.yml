@@ -3,13 +3,18 @@
   hosts: all
 
   tasks:
+    - name: Ensure locale is set to UTF-8
+      shell: |
+        localectl set-locale LANG=en_US.UTF-8
+      become: true
+
     - name: Start Docker Service
       service:
         name: docker
         state: started
 
-    - name: Pull Image
+    - name: Pull Docker Image
       shell: docker pull siddharth303/calculator:latest
 
-    - name: Run the container
+    - name: Run the Docker container
       shell: docker create -it --name Calculator siddharth303/calculator
