@@ -46,7 +46,7 @@ pipeline{
 //                 inventory: 'inventory',
 //                 playbook: 'Deploy_Calculator.yml'
 //                     sh 'pwd'
-                    sh '/home/siddharth/.local/bin/ansible-playbook -i inventory Deploy_Calculator.yml'
+                    sh 'ansible-playbook -i inventory Deploy_Calculator.yml'
 
              }
         }
