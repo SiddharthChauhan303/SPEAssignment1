@@ -7,7 +7,7 @@ pipeline{
 
         stage("Stage 1 : Git Clone"){
             steps{
-                git credentialsId: 'GitHubSid', url :"https://github.com/SiddharthChauhan303/Caluclator_SPE_MiniProject.git", branch: 'main'
+                git credentialsId: 'GitHubSid', url :"https://github.com/SiddharthChauhan303/SPEAssignment1.git", branch: 'master'
             }
         }
 
