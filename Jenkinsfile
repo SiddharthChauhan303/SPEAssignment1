@@ -7,7 +7,7 @@ pipeline{
 
         stage("Stage 1 : Git Clone"){
             steps{
-                git "https://github.com/SiddharthChauhan303/Caluclator_SPE_MiniProject.git"
+                git "https://github.com/SiddharthChauhan303/Caluclator_SPE_MiniProject.git", branch: 'master'
             }
         }
 
